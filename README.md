@@ -22,6 +22,22 @@ Manual prospecting is repetitive and inconsistent: hours spent searching for qua
 
 [`examples/streaming-media-sales/`](examples/streaming-media-sales) shows this framework fully instantiated for a real use case — OTT/streaming platform sales across four verticals (live events/sports orgs, content-first creators, existing VOD operators, and government access TV). It's the concrete proof that the abstract framework actually holds up in a live sales motion.
 
+```mermaid
+flowchart TD
+    A[Identify candidate prospect] --> B{Passes ICP<br/>qualifying tests?}
+    B -- No --> X1[Reject — no further action]
+    B -- Yes --> C[Research: distribution,<br/>news, business model]
+    C --> D{Exists in CRM or<br/>owned by another rep?}
+    D -- Yes --> X2[Exclude — no outreach]
+    D -- No --> E[Enrich CRM record<br/>with verified fields]
+    E --> F[Select pitch angle<br/>by vertical]
+    F --> G[Draft multiple<br/>variant emails]
+    G --> H[Save as draft]
+    H --> I{Human review}
+    I -- Approved --> J[Send]
+    I -- Rejected/Edited --> H
+```
+
 ## Design principles
 
 - **Human-in-the-loop by default** — the agent drafts, it never sends
