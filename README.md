@@ -49,3 +49,9 @@ flowchart TD
 ## Status
 
 The framework and the worked example are both actively used in a live sales workflow. Company-specific identifiers (CRM portal IDs, real prospect names, internal client data) have been generalized or removed — what's shown here is the reusable logic, not proprietary data.
+
+Why I Built This
+
+This started as a single-company outreach tool. The realization that made it worth restructuring: the actual value wasn't the specific streaming-media pitch — it was the rules (how to qualify a prospect, how to prevent duplicate outreach, how to keep an AI agent's claims honest, how to keep a human in the loop). Those rules hold regardless of the product or vertical behind them.
+
+That's the part I think matters most for a Solutions Engineer role: the job isn't just knowing a product technically, it's being able to abstract a customer's specific problem into a repeatable pattern, then show them exactly how their case fits it. This repo is that same instinct applied to my own workflow.
